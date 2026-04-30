@@ -1,0 +1,230 @@
+body {
+  background: rgb(141, 139, 141);
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.page {
+  display: flex;
+  background: #FAF9F6;
+  width: 8.5in;     /* Use '210mm' for A4 */
+  height: 11in;    /* Use '297mm' for A4 */
+  /*margin: 30px auto;*/ /*Centers the paper on your screen */
+  /* padding: 0.5in;    Real-world margins */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Makes it look like a document */
+  
+  /* Critical for PDF export */
+  box-sizing: border-box; 
+  overflow: hidden;
+}
+
+/* Navy, Left Side */
+.left-side {
+  color: #FAF9F6;
+  background-color: #002e58;
+  width: 33%;
+  height: 100%;
+  padding-top: 20pt;
+  padding-right: 8pt;
+}
+
+.headshot {
+  width: 100pt;
+  height: auto;
+  border-radius: 50%;
+  border: 2pt solid white;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.left-side-div {
+  padding-left: 16pt;
+  margin-top: 23pt;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.contact-list > li::before,
+.left-side-div > ul > li::before {
+  font-family: "Font Awesome 6 Free";
+}
+
+.contact-list > li::before,
+.left-side-div > ul > li::before {
+  margin-right: 9pt;
+  margin-left: -14pt;
+  font-weight: 900;
+}
+
+.contact-list > .email::before {
+  content: "\f0e0";
+}
+
+.contact-list > .phone::before {
+  content: "\f3cd";
+}
+
+.contact-list > .location::before {
+  content: "\f3c5";
+}
+
+.left-side-div > ul {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 10pt;
+}
+
+.left-side-div > ul > li::before {
+  content: "\f101"
+}
+
+.left-side-div > ul > li {
+  margin: 5pt 0;
+}
+
+.left-side-title {
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  padding-bottom: 5pt;
+  display: inline-block;
+  font-size: 12pt;
+  margin-bottom: 0;
+}
+
+
+/* White, Right Side */
+.right-side {
+  color: #333333;
+  position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+.center > h1 {
+  color: #002e58;
+  border-bottom: 1px solid #002e58;
+  padding-bottom: 8pt;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.center > h2 {
+  color: #002e58;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 13pt;
+}
+
+.qr-code {
+  width: 50pt;
+  height: auto;
+  opacity: 60%;
+  position: absolute;
+  top: 2pt;
+  right: 2pt;
+}
+
+.right-side-title {
+  color: #002e58;
+  text-transform: uppercase;
+  border-bottom: 1px solid #002e58;
+  padding-bottom: 5pt;
+  display: inline-block;
+  font-size: 12pt;
+  margin-bottom: 0;
+}
+
+.right-side-div {
+  margin: -2pt 10pt;
+}
+
+.right-side-div > p {
+  font-size: 9pt;
+}
+
+.exp-top-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -4pt;
+}
+
+.exp-title,
+.exp-duration,
+.exp-company {
+  font-size: 10pt;
+}
+
+.exp-title {
+  width: 200pt;
+}
+
+.exp-company {
+  margin-top: -7pt;
+  opacity: 60%;
+}
+
+.exp-points {
+  margin-top: -5pt;
+  padding-left: 8pt;
+  font-size: 10pt;
+  list-style: none;
+}
+
+.exp-points > li::before {
+  content: "-";
+}
+
+
+/* Generic Commands */
+.bold {
+  font-weight: 700;
+}
+
+
+
+/* The Print Command */
+@media print {
+  body {
+    background: none;
+  }
+  .page {
+    margin: 0;
+    box-shadow: none;
+  }
+  @page {
+    size: letter;
+    margin: 0;
+  }
+}
+
+/* 1. Prevent the page from forcing the viewport to grow */
+.page {
+    /* Keep your existing styles, but add these */
+    flex-shrink: 0; 
+    max-width: 8.5in; 
+}
+
+/* 2. Responsive Scaling for Tablets and Small Desktops */
+@media (max-width: 900px) {
+    .page {
+        transform: scale(0.85);
+        transform-origin: top center;
+        margin-bottom: -100px; /* Pull the content below up to hide the gap created by scaling */
+    }
+}
+
+/* 3. Responsive Scaling for Mobile (The "Phone" Fix) */
+@media (max-width: 640px) {
+    .page {
+        transform: scale(0.45); /* Scale down to fit a standard phone width */
+        transform-origin: top center;
+        margin-bottom: -550px; /* Adjust this value until the section below looks right */
+    }
+}
