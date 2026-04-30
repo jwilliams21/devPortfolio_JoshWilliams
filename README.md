@@ -1,16 +1,23 @@
-# React + Vite
+Josh Williams | Front-End Developer & Technical Leader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A performance-focused professional portfolio and integrated digital resume. Built with a focus on modular component architecture, responsive design, and high-fidelity print capabilities for technical recruitment.
 
-Currently, two official plugins are available:
+Tech Stack
+ - Framework: React.js (Vite)
+ - Styling: Tailwind CSS v4
+ - Icons: Lucide React
+ - Deployment: Netlify
+ - Architecture: Component-based UI with CSS Modules for isolated document styling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ Key Features
+  - Dual-Purpose Resume Engine: A coded React component that mirrors a professional 8.5" x 11" layout.  Uses CSS @media print logic to ensure the web-view translates perfectly to a physical PDF without layout shifts.
+  - Responsive Viewport Scaling: Implements advanced CSS transforms to maintain a high-fidelity document feel on mobile devices while preventing horizontal overflow.
+  - Performance Optimized: Leveraging Vite for lighting-fast Hot Module Replacement and optimized production bundling.
+  - Accessible UI: Built with semantic HTML5 and accessible navigation patterns (including a managed mobile menu state).
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  Project Structure
+    ├── public/              # Static assets (PDFs, high-res imagery)
+    ├── src/
+    │   ├── components/      # Modular UI components (Navbar, Hero, Resume)
+    │   ├── App.jsx          # Main application entry and layout routing
+    │   └── main.jsx         # React DOM hydration
