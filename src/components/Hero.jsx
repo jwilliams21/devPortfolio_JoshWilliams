@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section id="hero" 
         className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen text-gray-200 flex flex-col items-center justify-center m-0 w-full overflow-hidden scroll-mt-20 pt-4">
-            <span>Welcome to my portfolio</span>
+            <span>Welcome to my portfolios</span>
             <h1 className="text-4xl md:text-6xl py-8 bg-linear-to-r from-white to-gray-400 bg-clip-text text-transparent font-bold px-4 text-center wrap-break-word max-w-full leading-tight">
                 Front-End Developer & Technical Leader
             </h1>
