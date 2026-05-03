@@ -12,7 +12,7 @@ export default function Hero() {
             </h1>
             <div className="max-w-3xl px-4 pb-12">
                 <h2 className="text-2xl md:text-4xl font-semibold text-center wrap-break-word leading-tight">
-                    Building modern web applications with cutting-edge technologies and creative solutions
+                    Specializing in building responsive, user-centric applications with React and Tailwind CSS. Leveraging years of SaaS leadership to deliver high-quality code and strategic solutions.
                 </h2>
             </div>
             <div className="text-base md:text-lg flex flex-col md:flex-row gap-4 md:gap-8 px-4">
