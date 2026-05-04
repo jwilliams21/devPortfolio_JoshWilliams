@@ -22,7 +22,7 @@ body {
 /* Navy, Left Side */
 .left-side {
   color: #FAF9F6;
-  background-color: #002e58;
+  background-color: #0f172a;
   width: 33%;
   height: 100%;
   padding-top: 20pt;
@@ -44,46 +44,23 @@ body {
   margin-top: 23pt;
 }
 
-.contact-list {
+.bullet-list {
   list-style: none;
+  padding: 0;
+  margin: 10pt 0;
 }
 
-.contact-list > li::before,
-.left-side-div > ul > li::before {
-  font-family: "Font Awesome 6 Free";
-}
-
-.contact-list > li::before,
-.left-side-div > ul > li::before {
-  margin-right: 9pt;
-  margin-left: -14pt;
-  font-weight: 900;
-}
-
-.contact-list > .email::before {
-  content: "\f0e0";
-}
-
-.contact-list > .phone::before {
-  content: "\f3cd";
-}
-
-.contact-list > .location::before {
-  content: "\f3c5";
-}
-
-.left-side-div > ul {
-  list-style: none;
-  padding-left: 20px;
+.bulletItem {
+  display: flex;
+  align-items: center;
+  gap: 1em;
   font-size: 10pt;
+  margin-bottom: 6pt;
+  color: #FAF9F6;
 }
 
-.left-side-div > ul > li::before {
-  content: "\f101"
-}
-
-.left-side-div > ul > li {
-  margin: 5pt 0;
+.bulletItem svg {
+  flex-shrink: 0;
 }
 
 .left-side-title {
@@ -102,21 +79,18 @@ body {
   position: relative;
 }
 
-.center {
-  text-align: center;
-}
-
 .center > h1 {
-  color: #002e58;
-  border-bottom: 1px solid #002e58;
+  color: #0f172a;
+  border-bottom: 1px solid #0f172a;
   padding-bottom: 8pt;
   display: inline-block;
-  margin-bottom: 0;
+  margin: 0.3em 0;
   font-weight: 400;
+  font-size: 24pt;
 }
 
 .center > h2 {
-  color: #002e58;
+  color: #0f172a;
   text-transform: uppercase;
   font-weight: 200;
   font-size: 13pt;
@@ -132,17 +106,17 @@ body {
 }
 
 .right-side-title {
-  color: #002e58;
+  color: #0f172a;
   text-transform: uppercase;
-  border-bottom: 1px solid #002e58;
+  border-bottom: 1px solid #0f172a;
   padding-bottom: 5pt;
   display: inline-block;
   font-size: 12pt;
-  margin-bottom: 0;
+  margin: 0.4em 0;
 }
 
 .right-side-div {
-  margin: -2pt 10pt;
+  margin: 0pt 10pt 0.5em;
 }
 
 .right-side-div > p {
@@ -152,7 +126,7 @@ body {
 .exp-top-line {
   display: flex;
   justify-content: space-between;
-  margin-top: -4pt;
+  margin: 0.4em 0;
 }
 
 .exp-title,
@@ -166,14 +140,12 @@ body {
 }
 
 .exp-company {
-  margin-top: -7pt;
   opacity: 60%;
 }
 
 .exp-points {
-  margin-top: -5pt;
   padding-left: 8pt;
-  font-size: 10pt;
+  font-size: 9pt;
   list-style: none;
 }
 
@@ -185,6 +157,10 @@ body {
 /* Generic Commands */
 .bold {
   font-weight: 700;
+}
+
+.center {
+  text-align: center;
 }
 
 
