@@ -1,4 +1,4 @@
-body {
+.resume {
   background: rgb(141, 139, 141);
   margin: 0;
   padding: 0;
@@ -8,12 +8,9 @@ body {
 .page {
   display: flex;
   background: #FAF9F6;
-  width: 8.5in;     /* Use '210mm' for A4 */
-  height: 11in;    /* Use '297mm' for A4 */
-  /*margin: 30px auto;*/ /*Centers the paper on your screen */
-  /* padding: 0.5in;    Real-world margins */
-  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Makes it look like a document */
-  
+  width: 8.5in;
+  height: 11in;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   /* Critical for PDF export */
   box-sizing: border-box; 
   overflow: hidden;
