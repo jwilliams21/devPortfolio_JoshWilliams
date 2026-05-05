@@ -4,9 +4,9 @@ export default function Card({ title, children, variant, className = "" }) {
 
     const variants = {
         skills: {
-            container: "w-5/6 border border-slate-900",
-            title: "text-lg bg-slate-900 font-semibold text-white text-center",
-            body: "text-lg text-slate-900"
+            container: "w-full border border-slate-900",
+            title: "text-lg bg-slate-900 font-semibold text-white text-center py-2",
+            body: "text-lg text-slate-900 my-2 px-4"
         }
     }
 

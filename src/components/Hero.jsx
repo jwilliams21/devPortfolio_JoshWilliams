@@ -16,8 +16,8 @@ export default function Hero() {
                 </h2>
             </div>
             <div className="text-base md:text-lg flex flex-col md:flex-row gap-4 md:gap-8 px-4">
-                <Button variant="hero">View My Work</Button>
-                <Button variant="hero">Get In Touch</Button>
+                <Button variant="hero" href="#projects">View My Work</Button>
+                <Button variant="hero" href="#contact">Get In Touch</Button>
             </div>
         </section>
     )

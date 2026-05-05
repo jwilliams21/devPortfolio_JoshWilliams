@@ -4,19 +4,10 @@ import { Download, Mail, Phone, MapPin, ChevronsRight } from 'lucide-react';
 export default function Resume() {
 
     return (
-        <section id="resume" className="scroll-mt-20 py-20 flex flex-col items-center w-full overflow-hidden">
-            {/* Resume Title & Download Button */}
-            <div className="max-w-204 w-full flex justify-between items-center mb-8 px-4 text-white">
-                <h2 className="text-3xl text-slate-900 font-bold font-inter">Resume</h2>
-                <a
-                    href="../JoshWilliams_Resume.pdf"
-                    download
-                    className="flex items-center gap-2 bg-slate-900 hover:bg-white hover:text-slate-900 border border-slate-900 px-4 py-2 rounded-md transition-all font-bold text-sm"
-                >
-                    <Download />
-                    DOWNLOAD PDF
-                </a>
-            </div>
+        <section id="resume" className="scroll-mt-20 py-10 flex flex-col items-center w-full overflow-hidden">
+            {/* Resume Title */}
+            <h1 className="text-3xl text-slate-900 font-bold font-inter text-center mb-8">Resume</h1>
+
             {/* Resume Content */}
             <div className={styles.page}>
                 {/* Left side Info */}
@@ -164,6 +155,20 @@ export default function Resume() {
                     </div>
                 </section>
             </div>
+
+            {/* Resume Download Button */}
+            <div className="w-full flex justify-center text-white">
+                <a
+                    href="../JoshWilliams_Resume.pdf"
+                    download
+                    className="flex items-center gap-2 bg-slate-900 hover:bg-white hover:text-slate-900 border border-slate-900 px-4 py-2 rounded-md transition-all font-bold text-sm"
+                >
+                    <Download />
+                    DOWNLOAD PDF
+                </a>
+            </div>
         </section>
+
+        
     )
 }
