@@ -14,11 +14,11 @@ export default function Skills() {
                     title={"Languages"}
                     >
                         <ul className="space-y-2 list-disc list-inside">
-                            <li>JavaScript (ES6+)</li>
+                            <li>JavaScript (ES6+)</li> 
                             <li>SQL (T-SQL)</li>
-                            <li>HTML5 / ASPX</li>
+                            <li>HTML5/ASPX</li>
                             <li>CSS3</li>
-                            <li>JSON / XSL (XSLT)</li>
+                            <li>JSON/XSL (XSLT)</li>
                             <li>C# (Basic)</li>
                         </ul>
                     </Card>
@@ -30,7 +30,7 @@ export default function Skills() {
                         <ul className="space-y-2 list-disc list-inside">
                             <li>React.js</li>
                             <li>Node.js</li>
-                            <li>Tailwind CSS / Bootstrap</li>
+                            <li>Tailwind CSS/Bootstrap</li>
                             <li>Kendo UI</li>
                         </ul>
                     </Card>
@@ -40,8 +40,8 @@ export default function Skills() {
                     title={"Development Tools"}
                     >
                         <ul className="space-y-2 list-disc list-inside">
-                            <li>VS Code / Visual Studio</li>
-                            <li>Git (GitKraken / GitHub)</li>
+                            <li>VS Code/Visual Studio</li>
+                            <li>Git (GitKraken/GitHub)</li>
                             <li>Vite</li>
                         </ul>
                     </Card>
@@ -64,7 +64,7 @@ export default function Skills() {
                         <ul className="space-y-2 list-disc list-inside">
                             <li>Technical Leadership</li>
                             <li>SME Documentation</li>
-                            <li>Mid-Year & End-Of-Year Review Documentation</li>
+                            <li>Mid-Year & End-Of-Year Review </li>
                         </ul>
                     </Card>
                 </div>
