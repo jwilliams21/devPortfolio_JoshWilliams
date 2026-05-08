@@ -8,11 +8,11 @@ export default function Contact() {
         <section id="contact" className="scroll-mt-20 py-16">
             <h1 className="text-3xl text-slate-900 font-bold font-inter text-center mb-8">Get In Touch</h1>
 
-            <div className="px-4 md:flex md:justify-between md:w-1/2 md:items-center md:mx-auto">
-                <div className="md:max-w-3/8">
+            <div className="px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center max-w-5xl mx-auto">
+                <div className="w-full">
                     <h3 className="text-2xl text-slate-900 font-bold mb-2">Let's Connect</h3>
                     <p>Whether you're looking to scale a technical team, architect a new front-end solution, or discuss the intersection of UX and enterprise data, I’m always interested in high-impact collaboration. Reach out via the form below or connect through my professional channels.</p>
-                    <div className="flex gap-4 my-4">
+                    <div className="flex gap-6 my-6">
                         <a
                             href="mailto:joshbenjaminwilliams@gmail.com"
                         ><Mail size={40} /></a>
@@ -28,7 +28,7 @@ export default function Contact() {
                         ><LinkedInIcon /></a>
                     </div>
                 </div>
-                <div className="mt-8 w-3/8 flex flex-col align-center">
+                <div className="w-full max-w-lg mx-auto">
                     <form className="flex flex-col gap-4">
                         <input type="text" placeholder="Your Name" className="p-2 border border-gray-400 rounded-md bg-gray-100"></input>
                         <input type="email" placeholder="Your Email" className="p-2 border border-gray-400 rounded-md bg-gray-100"></input>
