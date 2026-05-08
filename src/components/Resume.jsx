@@ -157,7 +157,7 @@ export default function Resume() {
             </div>
 
             {/* Resume Download Button */}
-            <div className="w-full flex justify-center text-white mt-8">
+            <div className="w-full flex justify-center text-white mt-4 md:mt-8">
                 <a
                     href="../JoshWilliams_Resume.pdf"
                     download

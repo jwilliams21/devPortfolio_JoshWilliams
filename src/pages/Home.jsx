@@ -6,10 +6,10 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <Resume />
       <About />
-      <Skills />
       <Projects />
+      <Skills />
+      <Resume />
       <Contact />
       <Footer />
     </>
