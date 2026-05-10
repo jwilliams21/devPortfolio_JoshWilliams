@@ -33,16 +33,16 @@ export default function Navbar() {
                     <div className="hidden md:flex flex-row items-center gap-8">
                         <ul className="flex flex-row gap-4">
                             <li>
-                                <a href="#resume">Resume</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#projects">Projects</a>
                             </li>
                             <li>
                                 <a href="#skills">Skills</a>
                             </li>
                             <li>
-                                <a href="#projects">Projects</a>
+                                <a href="#resume">Resume</a>
                             </li>
                             <li>
                                 <a href="#contact">Contact</a>
@@ -62,10 +62,10 @@ export default function Navbar() {
             <div className={`md:hidden absolute top-16 left-0 shadow-2xl w-full bg-slate-900 border-b border-slate-500 transition-all duration-300 ease-in-out
                 ${isMenuOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-4 invisible pointer-events-none'}`}>
                 <ul className="flex flex-col p-6 gap-4 text-white">
-                    <li><a href="#resume" onClick={toggleMenu} className="block py-2 text-lg">Resume</a></li>
                     <li><a href="#about" onClick={toggleMenu} className="block py-2 text-lg">About</a></li>
-                    <li><a href="#skills" onClick={toggleMenu} className="block py-2 text-lg">Skills</a></li>
                     <li><a href="#projects" onClick={toggleMenu} className="block py-2 text-lg">Projects</a></li>
+                    <li><a href="#skills" onClick={toggleMenu} className="block py-2 text-lg">Skills</a></li>
+                    <li><a href="#resume" onClick={toggleMenu} className="block py-2 text-lg">Resume</a></li>
                     <li><a href="#contact" onClick={toggleMenu} className="block py-2 text-lg">Contact</a></li>
                 </ul>
             </div>

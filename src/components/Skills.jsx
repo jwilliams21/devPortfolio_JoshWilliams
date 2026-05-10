@@ -3,7 +3,7 @@ import Card from "./ui/Card";
 export default function Skills() {
 
     return (
-        <section id="skills" className="scroll-mt-20 py-16">
+        <section id="skills" className="scroll-mt-20 py-6 md:py-8 lg:py-16">
             <h1 className="text-3xl text-slate-900 font-bold font-inter text-center mb-8">Skills & Expertise</h1>
 
             {/* Skill Cards */}

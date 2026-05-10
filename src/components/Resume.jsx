@@ -4,7 +4,7 @@ import { Download, Mail, Phone, MapPin, ChevronsRight } from 'lucide-react';
 export default function Resume() {
 
     return (
-        <section id="resume" className="scroll-mt-20 py-10 flex flex-col items-center w-full overflow-hidden">
+        <section id="resume" className="scroll-mt-20 py-6 md:py-8 lg:py-16 flex flex-col items-center w-full overflow-hidden">
             {/* Resume Title */}
             <h1 className="text-3xl text-slate-900 font-bold font-inter text-center mb-8">Resume</h1>
 
@@ -157,7 +157,7 @@ export default function Resume() {
             </div>
 
             {/* Resume Download Button */}
-            <div className="w-full flex justify-center text-white mt-4 md:mt-8">
+            <div className="w-full flex justify-center text-white mt-2 md:mt-8">
                 <a
                     href="../JoshWilliams_Resume.pdf"
                     download
