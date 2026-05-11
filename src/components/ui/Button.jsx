@@ -3,7 +3,7 @@ export default function Button({ children, onClick, variant, className = "", hre
     const variants = {
         contact: "text-lg text-slate-900 font-inter font-semibold border border-slate-900 px-6 py-3 rounded-lg hover:bg-slate-900 hover:text-white hover:shadow-md ",
         hero: "border-slate-400 border-solid border p-4 rounded-lg  hover:text-slate-900 hover:bg-gray-200 hover:border-slate-900 hover:font-semibold",
-        project: "border-slate-400 border-solid border p-2 rounded-lg  hover:text-slate-900 hover:bg-gray-200 hover:border-slate-900 hover:font-semibold"
+        project: "border-slate-400 border-solid border p-2 rounded-lg  hover:text-white hover:bg-slate-900 hover:border-slate-900 hover:font-semibold"
     }
 
     const combinedClasses = `${variants[variant]} ${className}`;

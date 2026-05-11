@@ -33,19 +33,19 @@ export default function Navbar() {
                     <div className="hidden md:flex flex-row items-center gap-8">
                         <ul className="flex flex-row gap-4">
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#about" className="hover:text-bold hover:border-b hover:border-white hover:pb-2">About</a>
                             </li>
                             <li>
-                                <a href="#projects">Projects</a>
+                                <a href="#projects" className="hover:text-bold hover:border-b hover:border-white hover:pb-2">Projects</a>
                             </li>
                             <li>
-                                <a href="#skills">Skills</a>
+                                <a href="#skills" className="hover:text-bold hover:border-b hover:border-white hover:pb-2">Skills</a>
                             </li>
                             <li>
-                                <a href="#resume">Resume</a>
+                                <a href="#resume" className="hover:text-bold hover:border-b hover:border-white hover:pb-2">Resume</a>
                             </li>
                             <li>
-                                <a href="#contact">Contact</a>
+                                <a href="#contact" className="hover:text-bold hover:border-b hover:border-white hover:pb-2">Contact</a>
                             </li>
                         </ul>
                     </div>

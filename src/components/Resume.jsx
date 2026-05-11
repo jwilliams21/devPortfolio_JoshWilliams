@@ -77,10 +77,10 @@ export default function Resume() {
                         <h3 className={`${styles["right-side-title"]} ${styles.bold}`}>Summary</h3>
                         <p>
                             <span className={styles.bold}>Front-End Developer & Technical Leader</span> with 10+ years of experience in SaaS environments. Specialized in building dynamic user 
-                            interfaces using <span className={styles.bold}>React</span>, <span className={styles.bold}>JavaScript</span>, and <span className={styles.bold}>Vite</span>. 
+                            interfaces via <span className={styles.bold}>React</span>, <span className={styles.bold}>JavaScript</span>, and <span className={styles.bold}>Vite</span>. 
                             Expert at bridging the gap between complex backend <span className={styles.bold}>SQL</span> data and front-end <span className={styles.bold}>UI</span> delivery. 
                             Proven ability to <span className={styles.bold}>collaborate cross-functionally</span> with design and engineering teams to 
-                            <span className={styles.bold}>uphold industry-leading UX</span> standards. Proficient in <span className={styles.bold}>version control (GitKraken, GitHub)</span> and modern 
+                            <span className={styles.bold}> uphold industry-leading UX</span> standards. Proficient in <span className={styles.bold}>version control (GitKraken, GitHub)</span> and modern 
                             styling frameworks like <span className={styles.bold}>Tailwind CSS</span> and <span className={styles.bold}>Bootstrap</span>.
                         </p>
                     </div>

@@ -7,7 +7,7 @@ export default function ProjectCard({ title, image, badges, description, demoLin
 
     return (
         <div className="mx-4 md:my-4 lg:mx-8 border border-slate-300 rounded-lg hover:shadow-lg">
-            <img src={image} alt={title} />
+            <img src={image} alt={title} className="rounded-t-lg"/>
             <div className="p-4 text-slate-900">
                 <h1 className="text-2xl font-semibold mb-2">{title}</h1>
                 <p>{description}</p>
