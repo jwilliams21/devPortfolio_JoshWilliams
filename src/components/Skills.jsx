@@ -8,33 +8,7 @@ export default function Skills() {
 
             {/* Skill Cards */}
             <div className="flex flex-col justify-center items-center mx-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-                    <Card 
-                    variant="skills"
-                    title={"Languages"}
-                    >
-                        <ul className="space-y-2 list-disc list-inside">
-                            <li>JavaScript (ES6+)</li> 
-                            <li>SQL (T-SQL)</li>
-                            <li>HTML5/ASPX</li>
-                            <li>CSS3</li>
-                            <li>JSON/XSL (XSLT)</li>
-                            <li>C# (Basic)</li>
-                        </ul>
-                    </Card>
-
-                    <Card 
-                    variant="skills"
-                    title={"Frameworks & Libraries"}
-                    >
-                        <ul className="space-y-2 list-disc list-inside">
-                            <li>React.js</li>
-                            <li>Node.js</li>
-                            <li>Tailwind CSS/Bootstrap</li>
-                            <li>Kendo UI</li>
-                        </ul>
-                    </Card>
-
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <Card 
                     variant="skills"
                     title={"Development Tools"}
@@ -65,6 +39,32 @@ export default function Skills() {
                             <li>Technical Leadership</li>
                             <li>SME Documentation</li>
                             <li>Mid-Year & End-Of-Year Review </li>
+                        </ul>
+                    </Card>
+
+                    <Card 
+                    variant="skills"
+                    title={"Languages"}
+                    >
+                        <ul className="space-y-2 list-disc list-inside">
+                            <li>JavaScript (ES6+)</li> 
+                            <li>SQL (T-SQL)</li>
+                            <li>HTML5/ASPX</li>
+                            <li>CSS3</li>
+                            <li>JSON/XSL (XSLT)</li>
+                            <li>C# (Basic)</li>
+                        </ul>
+                    </Card>
+
+                    <Card 
+                    variant="skills"
+                    title={"Frameworks & Libraries"}
+                    >
+                        <ul className="space-y-2 list-disc list-inside">
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Tailwind CSS/Bootstrap</li>
+                            <li>Kendo UI</li>
                         </ul>
                     </Card>
                 </div>

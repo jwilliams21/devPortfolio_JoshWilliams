@@ -1,8 +1,11 @@
+import React, { useState, useRef } from "react";
+import emailJs from "@emailjs/browser";
 import { Mail, ExternalLink } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "./ui/Icons";
 import Button from "./ui/Button";
 
 export default function Contact() {
+    const formRef = useRef()
 
     return (
         <section id="contact" className="scroll-mt-20 py-6 md:py-8 lg:py-16">
