@@ -5,7 +5,30 @@ import { GitHubIcon, LinkedInIcon } from "./ui/Icons";
 import Button from "./ui/Button";
 
 export default function Contact() {
-    const formRef = useRef()
+    const formRef = useRef();
+    const [isSent, setIsSent] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        emailJs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            formRef.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+        .then(() => {
+            setIsSent(true);
+            setIsSubmitting(false);
+        })
+        .catch((error) => {
+            console.error("Email sending error:", error);
+            setIsSubmitting(false);
+            alert("An error occurred while sending your message. Please try again.");
+        });
+    };
 
     return (
         <section id="contact" className="scroll-mt-20 py-6 md:py-8 lg:py-16">

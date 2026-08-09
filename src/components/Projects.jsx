@@ -7,10 +7,13 @@ export default function Projects() {
             <h1 className="text-3xl text-slate-900 font-bold font-inter text-center mb-8">Featured Projects</h1>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <ProjectCard 
-                    image="./images/firemovement_placeholder.jpg"
-                    title="FIRE Modeler"
-                    description="A web application that allows users to model their financial future using the FIRE (Financial Independence, Retire Early) method. Users can input their current financial situation, set goals, and see projections for their financial future."
-                    badges={["React", "Tailwind CSS", "Node.js"]}
+                    image="./images/fi-plannr_logo.png"
+                    title="FI-PlannR"
+                    description="An interactive space for tracking compound growth, running FIRE scenarios, and seeing how fast your money can work for you."
+                    badges={["React", "Tailwind CSS"]}
+                    demoLink='https://fi-plannr.netlify.app/'
+                    codeLink='https://github.com/jwilliams21/fi-plannr'
+                    className='w-auto! h-auto! px-4!'
                 />
                 <ProjectCard 
                     image="./images/firemovement_placeholder.jpg"
