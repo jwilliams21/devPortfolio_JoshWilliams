@@ -103,7 +103,7 @@ export default function Resume() {
                                 <span className={styles.bold}>UI Modernization:</span> Managed and updated legacy front-end components using <span className={styles.bold}>XSL (XSLT)</span> and <span className={styles.bold}>ASPX</span>, while leading the transition to modern, interactive <span className={styles.bold}>React</span> components for internal checklist tools.
                             </li>
                             <li>
-                                <span className={styles.bold}>Backend Integration:</span> Maintained and extended <span className={styles.bold}>Node.js</span> server logic to support core system features, including a void payment module; integrated <span className={styles.bold}>SQL</span> queries to deliver accurate <span className={styles.bold}>JSON</span> responses across both legacy and modern front-end architectures.
+                                <span className={styles.bold}>Backend Integration:</span> Maintained and extended server logic to support core system features, including a void payment module; integrated <span className={styles.bold}>SQL</span> queries to deliver accurate <span className={styles.bold}>JSON</span> responses across both legacy and modern front-end architectures.
                             </li>
                             <li>
                                 <span className={styles.bold}>Version Control:</span> Utilized <span className={styles.bold}>GitKraken</span> and <span className={styles.bold}>GitHub Desktop</span> to manage feature branches, execute merges, and push code updates to company repositories, ensuring seamless integration within the team’s development workflow.
