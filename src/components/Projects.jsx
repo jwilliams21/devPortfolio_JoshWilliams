@@ -15,7 +15,7 @@ export default function Projects() {
                     codeLink='https://github.com/jwilliams21/fi-plannr'
                     className='w-auto! h-auto! px-4!'
                 />
-                <ProjectCard 
+                {/* <ProjectCard 
                     image="./images/firemovement_placeholder.jpg"
                     title="FIRE Modeler"
                     description="A web application that allows users to model their financial future using the FIRE (Financial Independence, Retire Early) method. Users can input their current financial situation, set goals, and see projections for their financial future."
@@ -26,7 +26,7 @@ export default function Projects() {
                     title="FIRE Modeler"
                     description="A web application that allows users to model their financial future using the FIRE (Financial Independence, Retire Early) method. Users can input their current financial situation, set goals, and see projections for their financial future."
                     badges={["React", "Tailwind CSS", "Node.js"]}
-                />
+                /> */}
             </div>
         </section>
     )
