@@ -36,7 +36,6 @@ export default function Resume() {
                     <h3 className={styles["left-side-title"]}>Frameworks / Libraries</h3>
                     <ul className={styles["bullet-list"]}>
                         <li className={styles.bulletItem}><ChevronsRight size={20} />React.js</li>
-                        <li className={styles.bulletItem}><ChevronsRight size={20} />Node.js</li>
                         <li className={styles.bulletItem}><ChevronsRight size={20} />Tailwind CSS / Bootstrap</li>
                         <li className={styles.bulletItem}><ChevronsRight size={20} />Kendo UI</li>
                     </ul>
@@ -47,6 +46,7 @@ export default function Resume() {
                         <li className={styles.bulletItem}><ChevronsRight size={20} />VS Code / Visual Studio</li>
                         <li className={styles.bulletItem}><ChevronsRight size={20} />Git (GitKraken / GitHub)</li>
                         <li className={styles.bulletItem}><ChevronsRight size={20} />Vite</li>
+                        <li className={styles.bulletItem}><ChevronsRight size={20} />Node.js</li>
                     </ul>
                     </div>
                     <div className={styles["left-side-div"]}>
