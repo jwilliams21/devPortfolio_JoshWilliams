@@ -15,6 +15,15 @@ export default function Projects() {
                     codeLink='https://github.com/jwilliams21/fi-plannr'
                     className='w-auto! h-auto! px-4!'
                 />
+                <ProjectCard 
+                    image="./images/nextup_logo.jpg"
+                    title="NextUp"
+                    description="A lightweight Chrome extension for instant task capture, featuring custom hotkeys, auto-focus, and a library of witty, randomized placeholders."
+                    badges={["React", "Tailwind CSS"]}
+                    demoLink='https://nextup-extension.netlify.app/'
+                    codeLink='https://github.com/jwilliams21/nextup'
+                    className='w-auto! h-auto! px-4!'
+                />
                 {/* <ProjectCard 
                     image="./images/firemovement_placeholder.jpg"
                     title="FIRE Modeler"
