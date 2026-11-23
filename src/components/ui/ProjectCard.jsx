@@ -22,12 +22,14 @@ const ProjectCard = ({ image, title, description, badges, demoLink, codeLink, cl
 
   return (
     <div className="mx-auto md:my-4 lg:mx-8 rounded-lg hover:shadow-lg min-h-125 h-auto w-7/8 flex flex-col border border-slate-300 bg-white transition-all duration-300">
-      <div className="w-full flex flex-col justify-center items-center mx-auto h-42 xl:h-72 shrink-0 overflow-hidden">
-        <img 
-          src={image} 
-          alt={title} 
-          className={`w-full h-full rounded-t-lg ${className || ''}`} 
-        />
+      <div className="p-4">
+        <div className="w-full flex flex-col justify-center items-center mx-auto h-42 xl:h-72 shrink-0 overflow-hidden rounded-xl">
+          <img 
+            src={image} 
+            alt={title} 
+            className={`w-full h-full object-cover ${className || ''}`} 
+          />
+        </div>
       </div>
       <div className="p-4 text-slate-900 flex flex-col grow">
         <h1 className="text-2xl font-semibold mb-2">{title}</h1>

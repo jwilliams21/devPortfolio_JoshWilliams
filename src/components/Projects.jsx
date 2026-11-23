@@ -13,7 +13,6 @@ export default function Projects() {
                     badges={["React", "Tailwind CSS"]}
                     demoLink='https://fi-plannr.netlify.app/'
                     codeLink='https://github.com/jwilliams21/fi-plannr'
-                    className='w-auto! h-auto! px-4!'
                 />
                 <ProjectCard 
                     image="./images/nextup_logo.jpg"
@@ -22,7 +21,14 @@ export default function Projects() {
                     badges={["React", "Tailwind CSS"]}
                     demoLink='https://nextup-extension.netlify.app/'
                     codeLink='https://github.com/jwilliams21/nextup'
-                    className='w-auto! h-auto! px-4!'
+                />
+                <ProjectCard 
+                    image="./images/nextup_logo.jpg"
+                    title="Reel-Winners"
+                    description="A cinema companion for checking off major Oscar winners by year, browsing cast and plot details to build a watchlist, and spinning a roulette wheel to pick your next unwatched winner."
+                    badges={["React", "Tailwind CSS"]}
+                    demoLink=''
+                    codeLink=''
                 />
                 {/* <ProjectCard 
                     image="./images/firemovement_placeholder.jpg"
