@@ -7,7 +7,7 @@ export default function Projects() {
             <h1 className="text-3xl text-slate-900 font-bold font-inter text-center mb-8">Featured Projects</h1>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <ProjectCard 
-                    image="./images/fi-plannr_logo.png"
+                    image="./images/fi-plannr_logo.jpg"
                     title="FI-PlannR"
                     description="An interactive space for tracking compound growth, running FIRE scenarios, and seeing how fast your money can work for you."
                     badges={["React", "Tailwind CSS"]}
@@ -23,7 +23,7 @@ export default function Projects() {
                     codeLink='https://github.com/jwilliams21/nextup'
                 />
                 <ProjectCard 
-                    image="./images/nextup_logo.jpg"
+                    image="./images/reelWinners_fullLogo.jpg"
                     title="Reel-Winners"
                     description="A cinema companion for checking off major Oscar winners by year, browsing cast and plot details to build a watchlist, and spinning a roulette wheel to pick your next unwatched winner."
                     badges={["React", "Tailwind CSS"]}
