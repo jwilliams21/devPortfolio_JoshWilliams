@@ -1,6 +1,6 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import emailJs from "@emailjs/browser";
-import { Mail, ExternalLink } from "lucide-react";
+import { Mail } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "./ui/Icons";
 import Button from "./ui/Button";
 
@@ -22,6 +22,7 @@ export default function Contact() {
         .then(() => {
             setIsSent(true);
             setIsSubmitting(false);
+            formRef.current.reset();
         })
         .catch((error) => {
             console.error("Email sending error:", error);
@@ -55,11 +56,16 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="w-full max-w-lg mx-auto">
-                    <form className="flex flex-col gap-4">
-                        <input type="text" placeholder="Your Name" className="p-2 border border-gray-400 rounded-md bg-gray-100"></input>
-                        <input type="email" placeholder="Your Email" className="p-2 border border-gray-400 rounded-md bg-gray-100"></input>
-                        <textarea placeholder="Your Message" className="p-2 border border-gray-400 rounded-md bg-gray-100"></textarea>
-                        <Button type="submit" variant="contact">Send!</Button>
+                    <form className="flex flex-col gap-4" ref={formRef} onSubmit={sendEmail}>
+                        <input type="text" name="from_name" placeholder="Your Name" required className="p-2 border border-gray-400 rounded-md bg-gray-100"></input>
+                        <input type="email" name="from_email" placeholder="Your Email" required className="p-2 border border-gray-400 rounded-md bg-gray-100"></input>
+                        <textarea name="message" placeholder="Your Message" required className="p-2 border border-gray-400 rounded-md bg-gray-100"></textarea>
+                        <Button type="submit" variant="contact" disabled={isSubmitting}>
+                            {isSubmitting ? "Sending..." : "Send!"}
+                        </Button>
+                        {isSent && (
+                            <p className="text-sm">Thanks!  Your message is on its way!</p>
+                        )}
                     </form>
                 </div>
             </div>
