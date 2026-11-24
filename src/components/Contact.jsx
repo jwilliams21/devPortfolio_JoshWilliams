@@ -9,9 +9,14 @@ export default function Contact() {
     const [isSent, setIsSent] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
+    console.log("Service ID: ", import.meta.env.VITE_EMAILJS_SERVICE_ID)
+    console.log("Template ID: ", import.meta.env.VITE_EMAILJS_TEMPLATE_ID)
+    console.log("Public Key: ", import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+
     const sendEmail = (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setIsSent(false)
 
         emailJs.sendForm(
             import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -59,12 +64,12 @@ export default function Contact() {
                     <form className="flex flex-col gap-4" ref={formRef} onSubmit={sendEmail}>
                         <input type="text" name="from_name" placeholder="Your Name" required className="p-2 border border-gray-400 rounded-md bg-gray-100"></input>
                         <input type="email" name="from_email" placeholder="Your Email" required className="p-2 border border-gray-400 rounded-md bg-gray-100"></input>
-                        <textarea name="message" placeholder="Your Message" required className="p-2 border border-gray-400 rounded-md bg-gray-100"></textarea>
+                        <textarea name="from_message" placeholder="Your Message" required className="p-2 border border-gray-400 rounded-md bg-gray-100"></textarea>
                         <Button type="submit" variant="contact" disabled={isSubmitting}>
-                            {isSubmitting ? "Sending..." : "Send!"}
+                            {isSubmitting ? "Transmitting..." : "Send"}
                         </Button>
                         {isSent && (
-                            <p className="text-sm">Thanks!  Your message is on its way!</p>
+                            <p className="text-sm text-center">Thanks!  Your message is on its way!</p>
                         )}
                     </form>
                 </div>
