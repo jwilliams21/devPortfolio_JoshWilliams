@@ -27,8 +27,8 @@ export default function Projects() {
                     title="Reel-Winners"
                     description="A cinema companion for checking off major Oscar winners by year, browsing cast and plot details to build a watchlist, and spinning a roulette wheel to pick your next unwatched winner."
                     badges={["React", "Tailwind CSS"]}
-                    demoLink=''
-                    codeLink=''
+                    demoLink='https://reelwinners.netlify.app/'
+                    codeLink='https://github.com/jwilliams21/reel-winners'
                 />
                 {/* <ProjectCard 
                     image="./images/firemovement_placeholder.jpg"
